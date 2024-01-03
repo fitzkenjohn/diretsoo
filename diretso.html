@@ -23,6 +23,8 @@ body { margin: 0; padding: 0; }
         zoom: 13.5 // starting zoom
     });
 
+       // Add zoom and rotation controls to the map.
+      map.addControl(new mapboxgl.NavigationControl());
     const geojson = {
         'type': 'FeatureCollection',
         'features': [
